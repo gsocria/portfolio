@@ -484,7 +484,7 @@ body {
 #projetos {
     width: 100%;
     padding-top: 100px;
-    height: 1450px;
+    height: 1500px;
     border-top: 1px solid white;
     border-bottom: 3px solid white;
 }
@@ -615,6 +615,7 @@ body {
     #projetos {
         width: 100%;
         padding-top: 80px;
+        height: 2100px;
     }
     
     .titulo-projetos {
@@ -834,4 +835,118 @@ body {
     color: var(--preto);
     font-size: 18px;
     cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    
+    #contato {
+    width: 100%;
+    padding-top: 80px;
+    height: 900px;
+}
+    
+    
+    .titulo-contato {
+    height: 50px;
+    margin-bottom: 50px;
+    text-align: center;    
+  
+}
+
+.text-titulo {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.text-titulo h1 {
+    font-size: 35px;
+    color: var(--laranja);
+    border-bottom: 1px solid var(--branco);
+}
+
+.formulario {
+    border: 1px solid white;
+    width: 90%;
+    height: 750px;
+    margin: 0 auto;
+
+}
+
+.conteudo {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 25px;
+}
+
+.coluna1  {
+    width: 90%; 
+    height: 150px;
+}
+
+.coluna1 label {
+    font-size: 18px;
+}
+
+.coluna1 input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: var(--preto);
+}
+
+.coluna2 {
+    width: 90%;
+    height: 150px;
+}
+
+.coluna2 label {
+    font-size: 18px;
+}
+
+
+.coluna2 input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: var(--preto);
+}
+
+.area {
+    width: 100%;
+}
+
+.area textarea {
+    resize: none;
+    color: var(--preto);
+    font-size: 18px;
+    width: 95%;
+}
+
+.area label {
+    font-size: 18px;
+}
+
+.botao-contato {
+    display: flex;
+    margin: 0 auto;
+}
+
+.botao-contato button {
+    padding: 5px 20px;
+    background-color: var(--branco);
+    color: var(--preto);
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}  
 }
