@@ -756,7 +756,7 @@ body {
 .formulario {
     border: 1px solid white;
     width: 50%;
-    height: 550px;
+    height: 500px;
     margin: 0 auto;
 
 }
@@ -791,6 +791,7 @@ body {
     margin-top: 5px;
     margin-bottom: 25px;
     color: var(--preto);
+    border: none;
 }
 
 .campos {

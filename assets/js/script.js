@@ -22,3 +22,4 @@ function showText(el,text,interval) {
 showText(el, text, interval);
 
 
+
