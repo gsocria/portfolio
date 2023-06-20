@@ -508,7 +508,7 @@ body {
 }
 
 .caixa-projetos {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
     gap: 100px;
