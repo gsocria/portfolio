@@ -43,3 +43,40 @@ chk.addEventListener('change', () => {
 });
 
 
+// class MobileNavbar {
+//     constructor(mobileMenu, navList, navLinks) {
+//         this.mobileMenu = document.querySelector(mobileMenu);
+//         this.navList = document.querySelector(navList);
+//         this.navLinks = document.querySelector(navLinks);
+//         this.navList = "active"
+//     }
+
+//     addClickEvent() {
+//         this.mobileMenu.addEventListener('click', () => console.log ("hey"));
+//     }
+
+//     init() {
+//         if(this.mobileMenu) {
+//             this.addClickEvent();
+//         }
+
+//         return this;
+//     }
+// }
+
+// const mobileNavbar = new MobileNavbar(
+//     ".menu-mobile",
+//     ".menu",
+//     ".itens li",
+// );
+
+// mobileNavbar.init();
+
+const btnMenu = document.querySelector('.menu-mobile');
+const menu = document.getElementById('menu');
+
+btnMenu.addEventListener('click', () => {
+    if(!btnMenu == true) {
+        menu.classList.toggle('active');
+    }
+})

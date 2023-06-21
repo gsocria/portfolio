@@ -40,6 +40,11 @@ body {
     
 }
 
+.menu {
+    display: flex;
+    width: 100%;
+}
+
 .menu-mobile {
     cursor: pointer;
     display: none;
@@ -104,6 +109,9 @@ body {
 
 @media (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
 
     .navbar {
         width: 100%;
@@ -115,21 +123,60 @@ body {
         border: 1px solid white;
     }
 
+    .menu {
+        width: 50%;
+        right: 0;
+        top: 0;
+        position: absolute;
+        height: 50vh;
+        border: 1px solid blue;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        transform: translateX(100%);
+    }
 
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    .mode {
+        margin-top: 20px;
+        opacity: 0;
+        
+    }
+
+    .mode label {
+        margin: 0 auto;
+    }
 
     .itens {   
-        display: flex;
-        gap: 10px;
+        width: 100%;
+        display: block;
         justify-content: center;
         transition: background-color 0.5s ease;
+
+    }
+
+    .itens li {
+        padding-top: 15px;
+        margin: 0 auto;
+        opacity: 0;
+        
     }
 
     .itens li a {
         color: var(--branco);
         font-size: 12px;
         transition: color 0.5s ease;
-    }
+    }   
 
+
+    .menu-mobile {
+        display: block;
+        padding-left: 90%;
+    }
 
 }
 
@@ -553,7 +600,6 @@ body {
     text-align: center;
     width: 100%;
     gap: 7vh;
-    border: 1px solid black;
 }
     
 }
