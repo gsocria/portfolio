@@ -115,21 +115,19 @@ body {
 
     .navbar {
         width: 100%;
-        padding: 25px;
+        padding: 13px;
         top: 0;
         position: fixed;
         z-index: 2;
         transition: background-color 0.5s ease;
-        border: 1px solid white;
     }
 
     .menu {
         width: 50%;
         right: 0;
-        top: 0;
+        top: 60px;
         position: absolute;
-        height: 50vh;
-        border: 1px solid blue;
+        height: 100vh;;
         display: block;
         flex-direction: column;
         text-align: center;
@@ -139,12 +137,26 @@ body {
 
     .menu.active {
         transform: translateX(0);
+        background-color: var(--primary-color);
+        transition: 0.5s ease;
+
+    }
+
+    @keyframes menuFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     .mode {
-        margin-top: 20px;
+        margin-top: 50px;
         opacity: 0;
-        
+  
     }
 
     .mode label {
@@ -156,27 +168,36 @@ body {
         display: block;
         justify-content: center;
         transition: background-color 0.5s ease;
-
+        opacity: 0;
     }
 
     .itens li {
-        padding-top: 15px;
+        padding-top: 35px;
         margin: 0 auto;
-        opacity: 0;
-        
     }
 
     .itens li a {
         color: var(--branco);
-        font-size: 12px;
+        font-size: 18px;
         transition: color 0.5s ease;
+
     }   
 
 
     .menu-mobile {
         display: block;
-        padding-left: 90%;
+        margin-left: 90%;
     }
+
+    .menu-mobile div {
+        background: var(--branco);
+        transition: 0.5s;
+        width: 32px;
+        height: 2px;
+        margin: 8px;
+    }
+
+
 
 }
 

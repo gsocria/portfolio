@@ -43,40 +43,40 @@ chk.addEventListener('change', () => {
 });
 
 
-// class MobileNavbar {
-//     constructor(mobileMenu, navList, navLinks) {
-//         this.mobileMenu = document.querySelector(mobileMenu);
-//         this.navList = document.querySelector(navList);
-//         this.navLinks = document.querySelector(navLinks);
-//         this.navList = "active"
-//     }
-
-//     addClickEvent() {
-//         this.mobileMenu.addEventListener('click', () => console.log ("hey"));
-//     }
-
-//     init() {
-//         if(this.mobileMenu) {
-//             this.addClickEvent();
-//         }
-
-//         return this;
-//     }
-// }
-
-// const mobileNavbar = new MobileNavbar(
-//     ".menu-mobile",
-//     ".menu",
-//     ".itens li",
-// );
-
-// mobileNavbar.init();
 
 const btnMenu = document.querySelector('.menu-mobile');
 const menu = document.getElementById('menu');
+const mode = document.getElementById('mode')
+const itensLi = document.getElementById('itens');
+const linha1 = document.querySelector(".linha1");
+const linha2 = document.querySelector(".linha2");
+const linha3 = document.querySelector(".linha3");
 
 btnMenu.addEventListener('click', () => {
-    if(!btnMenu == true) {
-        menu.classList.toggle('active');
+    menu.classList.toggle('active');
+
+    if(linha1.style.transform === '' ){
+        linha1.style.transform = 'rotate(-45deg) translate(-8px, 9px)';
+        linha2.style.opacity = '0';
+        linha3.style.transform = 'rotate(45deg) translate(-5px, -6px)';
     }
+    else {
+        linha1.style.transform = '';
+        linha2.style.opacity = '1';
+        linha3.style.transform = '';
+    }
+
+    if (mode.style.animation === '' && itensLi.style.animation === ''){
+        mode.style.animation = 'menuFade 1s ease forwards 0.5s';
+        itensLi.style.animation = 'menuFade 1s ease forwards 0.5s';
+    }
+    else {
+        mode.style.animation = '';
+        itensLi.style.animation = '';
+    }
+
+
+
+    
+
 })
