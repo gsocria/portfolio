@@ -686,7 +686,7 @@ body {
 }
 
 .text-projeto p {
-    font-size: 18px;
+    font-size:16px;
     color: var(--branco);
     transition: color 0.5s ease;
 }
@@ -695,7 +695,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 50%;
+    gap: 40%;
     align-items: center;
     height: 50px;
     margin-top: 15px;

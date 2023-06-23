@@ -184,13 +184,13 @@
             <div class="caixa-projetos">
                 <div class="meu-projeto">
                     <div class="foto-projeto">
-                        <img src="https://vocedigitalpropaganda.com.br/blogwpn/wp-content/uploads/2021/03/landing-page-capa-1024x661.jpg" alt="">
+                        <img src="./assets/img/Captura de Tela (2)-fotor-2023062314418.png" alt="">
                         
                     </div>
                     
                     <div class="text-projeto">
                         <p>
-                            Uma landing page, também conhecida como página de destino, é uma página web específica criada para receber e direcionar os visitantes que chegam através de um anúncio, campanha de marketing ou link externo.</p>
+                        Torneios.gg é um empreendimento pessoal em desenvolvimento, dedicado ao público dos e-Sports. O objetivo central desse projeto é proporcionar uma plataforma abrangente que permita aos usuários participar, monitorar e promover torneios em diversas modalidades dos e-Sports.</p>
                     </div>
 
                     <div class="footer-projeto">
@@ -200,6 +200,7 @@
                                     <li><i class="fa-brands fa-html5 fa-2xl" style="color: var(--branco);"></i></li>
                                     <li><i class="fa-brands fa-css3-alt fa-2xl" style="color: var(--branco);"></i></li>
                                     <li><i class="fa-brands fa-square-js fa-2xl" style="color: var(--branco);"></i></li>
+                                    <li><i class="fa-brands fa-php fa-2xl" style="color: var(--branco);"></i></li>
                                 </ul>
                             </div>
                         </div>
@@ -209,9 +210,37 @@
                             </button>
                         </div>
                     </div>
-
                 </div>
+                
                 <div class="meu-projeto">
+
+                <div class="foto-projeto">
+                        <img src="./assets/img/Captura de Tela (2)-fotor-2023062314418.png" alt="">
+                        
+                    </div>
+                    
+                    <div class="text-projeto">
+                        <p>
+                        Torneios.gg é um empreendimento pessoal em desenvolvimento, dedicado ao público dos e-Sports. O objetivo central desse projeto é proporcionar uma plataforma abrangente que permita aos usuários participar, monitorar e promover torneios em diversas modalidades dos e-Sports.</p>
+                    </div>
+
+                    <div class="footer-projeto">
+                        <div class="icons-projeto">
+                            <div>
+                                <ul>
+                                    <li><i class="fa-brands fa-html5 fa-2xl" style="color: var(--branco);"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt fa-2xl" style="color: var(--branco);"></i></li>
+                                    <li><i class="fa-brands fa-square-js fa-2xl" style="color: var(--branco);"></i></li>
+                                    <li><i class="fa-brands fa-php fa-2xl" style="color: var(--branco);"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="botao-projeto">
+                            <button>
+                                <a href="https://github.com/gsocria/Torneio.gg" target="_blank"> VER MAIS </a>
+                            </button>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="meu-projeto">
@@ -240,7 +269,7 @@
 
             </div>
 
-            <form action="#" class="formulario" method="post">
+            <form action="php/envio.php" class="formulario" method="post">
                 
                 <div class="conteudo">
 
@@ -267,7 +296,7 @@
                     </div>
     
                     <div class="botao-contato">
-                        <button class="btn-contato" type="submit">ENVIAR</button>
+                        <button class="btn-contato" name="enviar" type="submit">ENVIAR</button>
                     </div>
 
                 </div>
